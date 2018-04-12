@@ -113,11 +113,7 @@ export default class AsyncImageAnimated extends Component<Props, State> {
             source={source}
             resizeMode={resizeMode || 'contain'}
             style={[
-              style,
-              {
-                opacity: imageOpacity,
-                position: 'absolute',
-              },
+              style
             ]}
             onLoad={this.onLoad}
             onError={this.onError} />
