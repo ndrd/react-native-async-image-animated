@@ -86,6 +86,7 @@ export default class AsyncImageAnimated extends Component<Props, State> {
   render() {
     const {
       imageKey,
+      resizeMode,
       placeholderColor,
       placeholderSource,
       source,
@@ -109,13 +110,12 @@ export default class AsyncImageAnimated extends Component<Props, State> {
           <Animated.Image
             key={imageKey}
             source={source}
-            resizeMode={'contain'}
+            resizeMode={resizeMode || 'contain'}
             style={[
               style,
               {
                 opacity: imageOpacity,
                 position: 'absolute',
-                resizeMode: 'contain',
               },
             ]}
             onLoad={this.onLoad}
