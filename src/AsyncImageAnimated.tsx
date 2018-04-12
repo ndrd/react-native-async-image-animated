@@ -25,6 +25,7 @@ interface Props {
   animationStyle?: AnimationStyle,
   delay?: number,
   imageKey?: string,
+  resizeMode?: string,
   placeholderColor?: string,
   placeholderSource?: ImageSource,
   source: NetworkImage,
